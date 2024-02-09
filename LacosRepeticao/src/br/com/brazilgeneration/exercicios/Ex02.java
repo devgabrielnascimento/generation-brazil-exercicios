@@ -15,7 +15,7 @@ public class Ex02 {
 		maiores50 = 0;
 		
 		while (idade > 0) {
-		System.out.println("Digite uma idade: ");
+		System.out.print("Digite uma idade: ");
 		idade = sc.nextInt();
 		
 		if(idade > 0 && idade < 21) {
