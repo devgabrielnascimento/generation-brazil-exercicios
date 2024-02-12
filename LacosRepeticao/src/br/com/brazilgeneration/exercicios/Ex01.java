@@ -24,7 +24,7 @@ public class Ex01 {
 				System.out.println("\nNo Intervalo entre " + numeroInicio + " e " + numeroFinal + ": \n");
 			}
 
-			for (i = numeroInicio; i < numeroFinal; i++) {
+			for (i = numeroInicio; i <= numeroFinal; i++) {
 				if (i % 3 == 0 && i % 5 == 0) {
 					System.out.println(i + " é múltiplo de 3 e 5");
 
