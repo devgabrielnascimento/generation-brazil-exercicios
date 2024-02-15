@@ -1,5 +1,6 @@
 package br.com.brazilgeneration.exercicios;
 
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -20,9 +21,11 @@ public class Ex01 {
 				+ "   	   0 - Sair \r"
 				+ "\r\n*****************************************************\r\n", nome;
 
-
+			 
+		
+		
+		
 		do {
-
 			System.out.println(menu);
 			System.out.println("Digite uma opção: ");
 			opc = sc.nextInt();
@@ -33,13 +36,14 @@ public class Ex01 {
 				System.out.println("Digite o nome: ");
 				nome = sc.next();
 				fila.add(nome);
-				System.out.println("Livro adicionado!");
+				System.out.println(fila);
+				System.out.println("Cliente adicionado!");
 				break;
 			}
 
 			case 2: {
 
-				System.out.println("Lista de livros na pilha: ");
+				System.out.println("Lista de Clientes na Fila: ");
 				System.out.println(fila);
 
 				break;
@@ -50,10 +54,10 @@ public class Ex01 {
 				if (fila.isEmpty() == true) {
 					System.out.println("A Fila está vazia!");
 				}
-				else {fila.remove();
+				else {fila.poll();
 				System.out.println("Pilha: ");
 				System.out.println(fila);
-				System.out.println("Livro removido!");
+				System.out.println("O Cliente foi Chamado!");
 				}
 				break;
 			}
@@ -74,13 +78,7 @@ public class Ex01 {
 
 		while (opc != 0);
 
-
-
-
-
 		sc.close();
-
-
 
 	}
 
