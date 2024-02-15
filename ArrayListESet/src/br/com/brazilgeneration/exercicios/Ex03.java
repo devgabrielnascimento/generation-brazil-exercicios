@@ -15,15 +15,15 @@ public class Ex03 {
 		
 		
 		for(int i = 1; i < 11; i++) {
-			System.out.println("Digite um número: ");
+			System.out.println("Digite o " + i +"° número : ");
 			numero = sc.nextInt();
 			setNumeros.add(numero);
 		}
 		
 		Iterator<Integer> iNumeros = setNumeros.iterator();
-		
+		System.out.println("Listar dados do Set");
 		while (iNumeros.hasNext()) {
-			System.out.println(iNumeros.next());
+			System.out.println("\r"+iNumeros.next());
 		}
 		
 		
