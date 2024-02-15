@@ -18,9 +18,7 @@ public class Ex01 {
 
 			if (numeros[i] == numero) {
 				numeroEncontrado = true;
-				System.out.println("O número " + numero + " está localizado na posição: " + i);
-				//Arrays.binarySearch(numeros, numero);
-			} 
+				System.out.println("O número " + numero + " está localizado na posição: " + i);			} 
 
 
 		}
