@@ -19,7 +19,7 @@ public class Ex02 {
 				+ "   	   2 - Listar todos os livros disponíveis\r\n"
 				+ "   	   3 - Retirar Livro da estante \r\n"
 				+ "   	   0 - Sair \r"
-				+ "\r\n*****************************************************\r\n", nome;
+				+ "\r\n*****************************************************\r\n";
 		do {
 			System.out.println(menu);
 			System.out.println("Digite uma opção: ");
@@ -30,8 +30,7 @@ public class Ex02 {
 			case 1: {
 				System.out.println("Digite o nome: ");
 				sc.nextLine();
-				nome = sc.nextLine();
-				livros.push(nome);
+				livros.push(sc.nextLine());
 				System.out.println("Pilha: ");
 				listarLivrosEstante(livros);
 				System.out.println("Livro adicionado na estante!");
@@ -49,7 +48,7 @@ public class Ex02 {
 
 			case 3: {
 				
-				if (livros.isEmpty() == true) {
+				if (livros.isEmpty()) {
 					System.out.println("A Estante está vazia!");
 				}
 				else {livros.pop();
@@ -75,6 +74,7 @@ public class Ex02 {
 		}
 
 		while (opc != 0);
+		
 
 		sc.close();
 		
