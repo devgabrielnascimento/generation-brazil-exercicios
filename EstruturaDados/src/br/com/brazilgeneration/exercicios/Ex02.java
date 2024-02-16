@@ -31,7 +31,7 @@ public class Ex02 {
 				System.out.println("Digite o nome: ");
 				sc.nextLine();
 				nome = sc.nextLine();
-				livros.add(nome);
+				livros.push(nome);
 				System.out.println("Pilha: ");
 				listarLivrosEstante(livros);
 				System.out.println("Livro adicionado na estante!");
@@ -77,8 +77,6 @@ public class Ex02 {
 		while (opc != 0);
 
 		sc.close();
-		
-		
 		
 	}
 	

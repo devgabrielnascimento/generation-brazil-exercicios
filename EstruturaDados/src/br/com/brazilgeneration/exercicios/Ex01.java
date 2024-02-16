@@ -20,10 +20,6 @@ public class Ex01 {
 				+ "   	   3 - Retirar Cliente da Fila \r\n"
 				+ "   	   0 - Sair \r"
 				+ "\r\n*****************************************************\r\n", nome;
-
-			 
-		
-		
 		
 		do {
 			System.out.println(menu);
@@ -36,6 +32,7 @@ public class Ex01 {
 				System.out.println("Digite o nome: ");
 				nome = sc.next();
 				fila.add(nome);
+				System.out.println("Fila: ");
 				System.out.println(fila);
 				System.out.println("Cliente adicionado!");
 				break;
@@ -55,7 +52,7 @@ public class Ex01 {
 					System.out.println("A Fila está vazia!");
 				}
 				else {fila.poll();
-				System.out.println("Pilha: ");
+				System.out.println("Fila: ");
 				System.out.println(fila);
 				System.out.println("O Cliente foi Chamado!");
 				}
